@@ -3,81 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IM Skjerm</title>
-    <link rel="icon" href="/Img/Logo_IM.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&family=Red+Hat+Display:ital,wght@0,300;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <title>send gmail</title>
+    <link rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+     crossorigin="anonymous">
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("pBjRfNsfxJAARjRvq");
+   })();
+</script>
 </head>
 <body>
-    <div class="main">
-        <div class="navbar">
-            <div class="navbarTop">
-                <div class="navbarLogo">
-                    <a class="logoButton" href="Index.html"> </a>
-                    <!-- <a class="logoButton" href="Index.html"> <img src="/Img/Logo_IM.png"  alt="IM Logo" width="100vw"></a> -->
-                 </div>
-                 <span class="navbarHeader">IM skjermen</span>
-            </div>
-            <div class="navbarBottom">
-                <a class="navbarA" href="Index.html"><button class="navbarButton">Home</button></a>
-                <a class="navbarA" href="send_inn.html"><button class="navbarButton">Send inn</button></a>
-                <a class="navbarA" href="tutorial.html"><button class="navbarButton">Tutorial</button></a>
-                <a class="navbarA" href="faq.html"><button class="navbarButton">FAQ</button></a>
-            
-            </div>
-        </div>
-        <div class="right">
-            
-        </div>
-        <div class="items">    
-            <div class="leftbody">
+    <div class="container border mt-3  bg-light">
+        <div class="row">
+            <div class="col-md-6 p-5 bg-primary text-white">
+                <h1>Hello!</h1>
+               <p class="fs-1 fw-lighter">
+              <strong>  before you send inn your file</strong> <br> <br>
+                1. make sure your file is in 4k resoulution for best quality.
                 <br>
                 <br>
-                <div class="card">
-                <span class="header"> Im skjermen <br></span> <br>
-                   IM skjermen er en skjerm som er på im avdelingen på elvebakken skole. Den er operert av Amund.F.A, Tidemann.L.H, Asmus.A.B og lærere. Hvis du skal sende inn media må du sende til Imskjermen@gmail.com og send en melding til noen av de nevnte så blir det satt opp på skjermen.
-                </div>
+                2. make sure your file is in a standing format 
+                <br>
+                <br>
+                3. make sure your file is in a standing format 
+                <br>
+                <br>
+                4. make sure your file is in a standing format 
+                <br>
+                <br>
+                5. make sure your file is in a standing format 
+                <br>
+                <br>
+                6. make sure your file is in a standing format 
+                
+                </p>
             </div>
-            <div class="rightbody">
-                <div>
-                    <img class="imgright" src="/Img/123.png" alt="" width="270vw">
-                </div>
+            <div class="col-md-6 py-3">
+               <h1>Send inn</h1>
+               <div class="form-group">
+                <h5 for="name">Name</h5>
+                <input 
+                type="text"
+                class="form-control" 
+                id="name"
+                placeholder="Enter your name ">
+               </div>
+               <div class="form-group">
+                <h5 for="email">Email</h5>
+                <input type="email"
+                class="form-control" 
+                id="email" 
+                placeholder="Enter your Mail ">
+               </div>
+               <div class="form-group">
+                <h5 for="message">Message</h5>
+                Skriv litt om hvor lenge filen skal være der og når den skal være der.
+                <textarea  id="message"  rows="3" class="form-control"></textarea>
+               </div>
+               <input class="form-control " type="file" id="fileInput" name="fileInput" accept=".jpg, .jpeg, .png, .gif .mp4 .mov">
+               <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+               
             </div>
+           
         </div>
     </div>
-    <footer class="footer">
-        <div class="VHC">
-            <div class="visit">
-                <div class=""></div>
-                <div class="visit1"> <p>Visit us</p></div>
-                <div class="adress"> <center><p>Vestre Elvebakke 3 <br>0182 Oslo</p></center></div>
-                <div class="directions"> <br><br><a id="directions_link" href="https://www.google.com/maps/dir//Elvebakken+videregående+skole,+Vestre+Elvebakke,+Oslo/@59.9189622,10.6706382,12.01z/data=!4m9!4m8!1m0!1m5!1m1!1s0x46416e64176e8135:0x55e1c9193cec9dae!2m2!1d10.7529125!2d59.9189228!3e0?entry=ttu" target="blank">Get Directions</a></div>
-            </div>
-            <div class="hours">
-                <div class="hours1"><center><p> hours </p></center> </div>
-                <div class="datetime"> 
-                    <div class="dag"> <center><p> Mon, Tue, Wed <br> Thu <br> Fri <br> Sat <br> Sun</p></center> </div>
-                    <div class="space"></div>
-                    <div class="tid"><center> <p> 08:15  - 15:30  <br> 08:15  - 15:30 <br> 10:00  - 15:00  <br> Closed <br> Closed</p> </center></div>
-                </div>
-            </div>
-            <div class="contact">
-                <div class="contact1"> <img class="logo12" src="/Img/Logo_IM.png" alt="logo"> 
-                    <center><p> (+47) 458 46 638</p>  <p>IMskjermen@gmail.com</p></center></div>
-            </div>
-        </div>
-        <div class="socialmedia"> 
-            <a href="https://www.youtube.com/channel/UCktG0xgNQ8EpHGqCTokFk6w" target="_blank"> <img class="sociallink" src="Img/MicrosoftTeams-image (3).png" alt="youtube"></a> 
-            <a href="https://www.instagram.com/skjerman001/" target="_blank"> <img class="sociallink1" src="Img/instagram.webp" alt="instagram"></a>
-        </div>
-        <div class="footline"> <p></p></div>
-        <div class="policy"><center><p>Privacy Policy | Do Not Share My Information | Conditions of Use 
-            Notice and Take Down Policy | Website Accessibility Policy</p> 
-            <p>© 2023 The content on this website is owned by us and our licensors. Do not copy any content (including images) without our consent.</p></center>
-        </div>
-    </footer>
+    <script src="gmail.js" ></script>
 </body>
 </html>
