@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>send gmail</title>
+    <link rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+     crossorigin="anonymous">
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("pBjRfNsfxJAARjRvq");
+   })();
+</script>
+</head>
+<body>
+    <div class="container border mt-3  bg-light">
+        <div class="row">
+            <div class="col-md-6 p-5 bg-primary text-white">
+                <h1>Hello!</h1>
+               <p class="fs-1 fw-lighter">
+              <strong>  before you send inn your file</strong> <br> <br>
+                1. make sure your file is in 4k resoulution for best quality.
+                <br>
+                <br>
+                2. make sure your file is in a standing format 
+                <br>
+                <br>
+                3. make sure your file is in a standing format 
+                <br>
+                <br>
+                4. make sure your file is in a standing format 
+                <br>
+                <br>
+                5. make sure your file is in a standing format 
+                <br>
+                <br>
+                6. make sure your file is in a standing format 
+                
+                </p>
+            </div>
+            <div class="col-md-6 py-3">
+               <h1>Send inn</h1>
+               <div class="form-group">
+                <h5 for="name">Name</h5>
+                <input 
+                type="text"
+                class="form-control" 
+                id="name"
+                placeholder="Enter your name ">
+               </div>
+               <div class="form-group">
+                <h5 for="email">Email</h5>
+                <input type="email"
+                class="form-control" 
+                id="email" 
+                placeholder="Enter your Mail ">
+               </div>
+               <div class="form-group">
+                <h5 for="message">Message</h5>
+                Skriv litt om hvor lenge filen skal være der og når den skal være der.
+                <textarea  id="message"  rows="3" class="form-control"></textarea>
+               </div>
+               <input class="form-control " type="file" id="fileInput" name="fileInput" accept=".jpg, .jpeg, .png, .gif .mp4 .mov">
+               <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+               
+            </div>
+           
+        </div>
+    </div>
+    <script src="gmail.js" ></script>
+</body>
+</html>
